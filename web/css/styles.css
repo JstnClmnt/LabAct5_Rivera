@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../fonts/roboto/Roboto-Regular.woff');
+}
+
+.landing-bg{
+    background: 
+                linear-gradient(
+                    rgba(62, 39, 35, 0.6), 
+                    rgba(62, 39, 35, 0.6)
+                ), 
+                url('../img/thought-catalog-214785.jpg');
+    background-position: 0% 30%;
+}
+
+h1{
+    font-family: Roboto-Regular;
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 3em;
+}
+
+.container{
+    padding: 5em 20em 0 20em;
+}
+
+h5{
+    font-family: Roboto-Regular;
+    color: #424242;
+    padding-left: 8px;
+}
+
+h4{
+    font-family: Roboto-Regular;
+    color: #424242;
+    text-align: center;
+}
+
+.login-link{
+    color: #bdbdbd;
+    font-family: Roboto-Regular;
+    margin-top: 20px;
+}
+
+.login-link:hover{
+    color: #e0e0e0;
+}
+
+.reg-wrap{
+     padding: 5em 25em 0 25em;
+}
+
+.tasks{
+    border-collapse: separate;
+    border-spacing:0 5px;
+    overflow: auto;
+}
+
+.cursor-move{
+    /*cursor: move;*/
+}
+
+.brand-logo{
+    font-family: 'Roboto Slab';
+    font-weight: bold;
+    margin-left: 20px;
+}

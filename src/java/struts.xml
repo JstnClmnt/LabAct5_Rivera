@@ -1,0 +1,28 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <!-- Configuration for the default package. -->
+    <constant name = "struts.devMode" value = "true" />
+    <package name="default" extends="struts-default" namespace="/">
+        <action name = "Login" class = "Controller.LoginAction" method="execute" >
+            <result name="SuccessUser">/home.jsp</result>
+            <result name="SuccessAdmin">/admin.jsp</result>
+            <result name="Error">/index.jsp</result>
+        </action>
+        <action name="Admin" class="Controller.AdminAction" method="execute">
+            <result name="success">/admin.jsp</result>
+        </action>
+        
+        <action name="Control" class="Controller.ControlAction" method="execute">
+            <result name="success">/home.jsp</result>
+        </action>
+        <action name="Register" class="Controller.RegisterAction" method="execute">
+            <result name="success">/home.jsp</result>
+        </action>
+        <action name="Logout" class="Controller.LogoutAction" method="execute">
+            <result name="success">/index.jsp</result>
+        </action>
+    </package>
+</struts>
